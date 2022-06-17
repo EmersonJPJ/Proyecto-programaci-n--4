@@ -8,6 +8,24 @@ package com.sc202.avance01.proyecto;
  *
  * @author Jeausthin
  */
-public class Menu {
-    
+public class Menu
+{
+    public void menu()
+    {
+        boolean salir = false;
+        
+        //Mientras que "boolean" siga siendo false, el ciclo se seguira repitiendo
+        while (salir == false)
+        {
+            int opcion = 0;
+            
+            
+            //Codigo para leer opcion
+            if (opcion == 0)
+            {
+                break;
+            }
+        }
+                
+    }
 }
