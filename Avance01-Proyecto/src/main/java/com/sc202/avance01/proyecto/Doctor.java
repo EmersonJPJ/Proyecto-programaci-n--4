@@ -9,5 +9,7 @@ package com.sc202.avance01.proyecto;
  * @author Jeausthin
  */
 public class Doctor {
-    
+    public String nombre= "";
+ public String apellido= "";
+  public String Id= "";
 }
