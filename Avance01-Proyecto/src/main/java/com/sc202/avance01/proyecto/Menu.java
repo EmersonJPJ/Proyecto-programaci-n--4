@@ -14,13 +14,13 @@ public class Menu
     {
         boolean salir = false;
         
-        //Si salir es igual a false abandona el bucle while
+        //Mientras que "boolean" siga siendo false, el ciclo se seguira repitiendo
         while (salir == false)
-        {    //Declarar variable en 0 para iniciar el bucle escogiendo un numero
+        {
             int opcion = 0;
             
             
-            //Estructura de desicion para continuar con el bucle
+            //Codigo para leer opcion
             if (opcion == 0)
             {
                 break;

@@ -11,8 +11,9 @@ package com.sc202.avance01.proyecto;
  */
 public class Avance01Proyecto {
 
-    public static void main(String[] args) {
-        //Se desarrollaron las public class necesarias para el desarrollo del proyecto, un ciclo
-        //while con estructuras de desicion para activar el programa de vacunacion 
+    public static void main(String[] args) 
+    {
+        Menu menu = new Menu();
+        menu.menu();
     }
 }
