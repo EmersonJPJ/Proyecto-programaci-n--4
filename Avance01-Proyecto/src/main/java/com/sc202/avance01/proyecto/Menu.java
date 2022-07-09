@@ -4,6 +4,8 @@
  */
 package com.sc202.avance01.proyecto;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Jeausthin
@@ -14,18 +16,21 @@ public class Menu
     {
         boolean salir = false;
         
-        //Mientras que "boolean" siga siendo false, el ciclo se seguira repitiendo
-        while (salir == false)
-        {
+        //Si salir es igual a false abandona el bucle while
+        do
+        {    //Declarar variable en 0 para iniciar el bucle escogiendo un numero
             int opcion = 0;
             
             
-            //Codigo para leer opcion
+            //Estructura de desicion para continuar con el bucle
             if (opcion == 0)
             {
-                break;
+                Mascota mascota = new Mascota();
+                mascota.AsignarEdad();
+                mascota.AsignarVacuna();
+
             }
-        }
+        } while (salir = false);
                 
     }
 }

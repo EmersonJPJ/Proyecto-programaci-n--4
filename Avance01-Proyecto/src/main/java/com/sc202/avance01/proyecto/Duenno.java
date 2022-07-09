@@ -8,6 +8,7 @@ package com.sc202.avance01.proyecto;
  *
  * @author Jeausthin
  */
-public class Duenno {
+public class Duenno 
+{
     
 }
