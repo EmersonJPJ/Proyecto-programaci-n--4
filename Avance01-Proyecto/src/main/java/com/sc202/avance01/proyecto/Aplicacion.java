@@ -8,7 +8,6 @@ package com.sc202.avance01.proyecto;
  *
  * @author Jeausthin
  */
-public class Reporte 
-{
+public class Aplicacion {
     
 }

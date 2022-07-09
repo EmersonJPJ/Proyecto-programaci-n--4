@@ -25,7 +25,10 @@ public class Menu
             //Estructura de desicion para continuar con el bucle
             if (opcion == 0)
             {
+                Duenno duenno = new Duenno();
                 Mascota mascota = new Mascota();
+                duenno.InfoDuenno();
+                duenno.Residencia();
                 mascota.AsignarEdad();
                 mascota.AsignarVacuna();
 

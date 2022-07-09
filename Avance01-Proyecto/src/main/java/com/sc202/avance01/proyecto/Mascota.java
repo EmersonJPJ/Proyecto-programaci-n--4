@@ -25,6 +25,7 @@ public class Mascota
     public Vacuna vacuna;
     public Doctor doctor;
     public Duenno duenno;
+    public Direccion direccion;
     
     public void AsignarEdad()
     {

@@ -12,23 +12,26 @@ import javax.swing.JOptionPane;
  */
 public class Duenno 
 {
-  public String Nombre;
+    public String Nombre;
     public String Apellidos;
     public int Cedula;
     public int Edad;
-    public String Residencia;
+ 
+
     
-    
-    
-    public void nom(){
-      Nombre=String.valueOf(JOptionPane.showInputDialog("Ingrese el nombre: "));
-      Apellidos=String.valueOf(JOptionPane.showInputDialog("Ingrese los apellidos: "));
-      Residencia=String.valueOf(JOptionPane.showInputDialog("Ingrese su lugar de vivienda: "));
+    public void InfoDuenno(){
+      Nombre=String.valueOf(JOptionPane.showInputDialog("Ingrese el nombre del duenno de la mascota: "));
+      Apellidos=String.valueOf(JOptionPane.showInputDialog("Ingrese los apellidos del duenno de la mascota: "));
+      Edad=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la edad del duenno de la mascota: "));
+      Cedula=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cedula del duenno de la mascota: "));
+
     }
-    public void num(){
-      Cedula=Integer.parseInt(JOptionPane.showInputDialog("Ingrese su cedula: "));
-      Edad=Integer.parseInt(JOptionPane.showInputDialog("Ingrese su edad: "));
-    }
+    public void Residencia(){
+    Direccion direccion = new Direccion();
+    direccion.Canton= JOptionPane.showInputDialog("Ingrese el canton donde vive: ");
+    direccion.Distrito= JOptionPane.showInputDialog("Ingrese el distrito donde vive: ");
+    direccion.Detalle= JOptionPane.showInputDialog("De detalles de la : ");
+}
       
     }  
 

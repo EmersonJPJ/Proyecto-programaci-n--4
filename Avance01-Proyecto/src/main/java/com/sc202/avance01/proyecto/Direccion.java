@@ -15,18 +15,11 @@ public class Direccion {
     public String Canton;
     public String Distrito;
     public String Detalle;
+}
+    
+    
+    
 
-    public Direccion(String Canton) {
-        this.Canton = Canton;
-    }
     
-    
-    
-    public void residencia(){
-        Canton= String.valueOf(JOptionPane.showInputDialog("Ingrese el canton donde vive: "));
-        Distrito= String.valueOf(JOptionPane.showInputDialog("Ingrese el distrito donde vive: "));
-        Detalle= String.valueOf(JOptionPane.showInputDialog("De detalles de la : "));
-}
-    
-}
+
 
