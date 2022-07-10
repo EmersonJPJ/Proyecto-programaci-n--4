@@ -19,19 +19,29 @@ public class Menu
         //Si salir es igual a false abandona el bucle while
         do
         {    //Declarar variable en 0 para iniciar el bucle escogiendo un numero
-            int opcion = 0;
+            String lectura = JOptionPane.showInputDialog("Menu.\n1. Mantenimiento.\n2. Reporte.\n3. Salir.");
+            int opcion = Integer.parseInt(lectura);
             
             
             //Estructura de desicion para continuar con el bucle
-            if (opcion == 0)
+            if (opcion == 1)
             {
                 Duenno duenno = new Duenno();
                 Mascota mascota = new Mascota();
+                Aplicacion aplicacion = new Aplicacion();
                 duenno.InfoDuenno();
                 duenno.Residencia();
+                mascota.AsignarInformacion();
                 mascota.AsignarEdad();
-                mascota.AsignarVacuna();
-
+                aplicacion.AplicarVacuna();
+            }
+            if (opcion == 2)
+            {
+                
+            }
+            if (opcion == 3)
+            {
+                salir = true;
             }
         } while (salir = false);
                 

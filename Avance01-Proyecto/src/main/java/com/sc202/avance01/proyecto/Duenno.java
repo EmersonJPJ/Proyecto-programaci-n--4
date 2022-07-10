@@ -16,7 +16,7 @@ public class Duenno
     public String Apellidos;
     public int Cedula;
     public int Edad;
- 
+    Reporte reporte;
 
     
     public void InfoDuenno(){
@@ -24,6 +24,7 @@ public class Duenno
       Apellidos=String.valueOf(JOptionPane.showInputDialog("Ingrese los apellidos del duenno de la mascota: "));
       Edad=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la edad del duenno de la mascota: "));
       Cedula=Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cedula del duenno de la mascota: "));
+      reporte.setNombreDuenno(Nombre + Apellidos);
 
     }
     public void Residencia(){
@@ -31,6 +32,7 @@ public class Duenno
     direccion.Canton= JOptionPane.showInputDialog("Ingrese el canton donde vive: ");
     direccion.Distrito= JOptionPane.showInputDialog("Ingrese el distrito donde vive: ");
     direccion.Detalle= JOptionPane.showInputDialog("De detalles de la : ");
+    reporte.setDireccionDuenno(direccion.Canton + direccion.Distrito + direccion.Detalle);
 }
       
     }  
