@@ -77,4 +77,5 @@ public class Reporte
         this.edadMascota = edadMascota;
     }
     
+
 }

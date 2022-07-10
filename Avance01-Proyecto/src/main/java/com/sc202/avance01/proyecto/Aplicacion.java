@@ -15,10 +15,10 @@ import javax.swing.JOptionPane;
 public class Aplicacion 
 {
     public TipoDeVacuna tipoDeVacuna;
-    
+    Reporte reporte = new Reporte();
     
     public void AplicarVacuna(){
-        Reporte reporte = new Reporte();
+        
         Vacuna vacuna = new Vacuna();
         Doctor doctor = new Doctor();
         vacuna.nombre = JOptionPane.showInputDialog("Ingrese el nombre de la vacuna"); 
@@ -47,4 +47,27 @@ public class Aplicacion
         LocalDate fechaAplicacion = LocalDate.parse(lectura1, DateTimeFormatter.ISO_LOCAL_DATE);
         reporte.SetFechaAplicacion(fechaAplicacion);
     }
+    
+        public void Reporte()
+        {
+            JOptionPane.showMessageDialog(null,"Fecha de aplicacion de la vacuna: "+reporte.GetFechaAplicacion()
+            +"\nNombre de la vacuna: "+reporte.GetNombreVacuna()
+            +"\nNombre del doctor que aplico la vacuna: "+reporte.GetNombreDoctor()
+            +"\nNombre del duenno de la mascota: "+reporte.getNombreDuenno()
+            +"\nNombre de la mascota: "+reporte.getNombreMascota()
+            +"\nEdad de la mascota: "+reporte.getEdadMascota()
+            +"\nDireccion del duenno de la mascota"+reporte.getDireccionDuenno());
+            
+        }
+        public void Ejecutar(){
+            Reporte reporte = new Reporte();
+            Duenno duenno = new Duenno();
+            Mascota mascota = new Mascota();
+            Aplicacion aplicacion = new Aplicacion();
+            duenno.InfoDuenno();
+            duenno.Residencia();
+            mascota.AsignarInformacion();
+            mascota.AsignarEdad();
+            aplicacion.AplicarVacuna();
+}
 }

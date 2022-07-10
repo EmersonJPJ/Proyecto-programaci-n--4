@@ -18,7 +18,7 @@ public class Mascota
     public String nombre;
     public LocalDate fechaNacimiento;
     public long edad;
-    Reporte reporte;
+    Reporte reporte = new Reporte();
     
     public void AsignarEdad()
     {

@@ -14,8 +14,8 @@ public class Menu
 {
     public void menu()
     {
-        boolean salir = false;
-        
+        boolean continuar = true;
+        Aplicacion aplicacion = new Aplicacion();
         //Si salir es igual a false abandona el bucle while
         do
         {    //Declarar variable en 0 para iniciar el bucle escogiendo un numero
@@ -26,24 +26,18 @@ public class Menu
             //Estructura de desicion para continuar con el bucle
             if (opcion == 1)
             {
-                Duenno duenno = new Duenno();
-                Mascota mascota = new Mascota();
-                Aplicacion aplicacion = new Aplicacion();
-                duenno.InfoDuenno();
-                duenno.Residencia();
-                mascota.AsignarInformacion();
-                mascota.AsignarEdad();
-                aplicacion.AplicarVacuna();
+
+                aplicacion.Ejecutar();
             }
             if (opcion == 2)
             {
-                
+                aplicacion.Reporte();
             }
             if (opcion == 3)
             {
-                salir = true;
+                continuar = false;
             }
-        } while (salir = false);
+        } while (continuar = true);
                 
     }
 }
